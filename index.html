@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HubBloco - Catálogo do Condomínio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Supabase CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="header">
+    <div class="header-content">
+      <h1 class="logo">Hub<span>Bloco</span></h1>
+      <span class="condo-name">Condomínio Teste 1</span>
+    </div>
+    <!-- Campo de Busca -->
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Buscar bolo, pizza, serviço...">
+    </div>
+  </header>
+
+  <!-- Filtro de Categorias -->
+  <nav class="categories">
+    <button class="cat-btn active" data-cat="todos">Todos</button>
+    <button class="cat-btn" data-cat="Lanches">Lanches</button>
+    <button class="cat-btn" data-cat="Doces">Doces</button>
+    <button class="cat-btn" data-cat="Serviços">Serviços</button>
+  </nav>
+
+  <!-- Grid de Produtos -->
+  <main class="container">
+    <section class="products-grid" id="productsGrid">
+      <!-- Os produtos serão inseridos aqui pelo JavaScript -->
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <p>HubBloco &copy; 2026 - Conectando Vizinhos</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
